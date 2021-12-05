@@ -1,5 +1,5 @@
 function fetchPromise(){
-    fetch("https://api.plos.org/111")
+    fetch("https://monica-bu.github.io/degree.json")
     .then(response => {
         if (response.status == 200) {
             return response.json()

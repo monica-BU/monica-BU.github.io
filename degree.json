@@ -1,19 +1,16 @@
 {
-    "my_degrees":[
-        {
-            "undergraduate":{
-                "school":"Nanjing university", 
-                "major":"Chinese Language and Literature", 
-                "type":"BA",
-                "year":2015
-                },
-            "graduate":{
-              "school":"Boston university",
-              "major":"Software Development",
-              "type":"MS",
-              "year":2022 
-            }
+    "my_degrees":{
+        "undergraduate":{
+            "school":"Nanjing university", 
+            "major":"Chinese Language and Literature", 
+            "type":"BA",
+            "year":2015
+            },
+        "graduate":{
+            "school":"Boston university",
+            "major":"Software Development",
+            "type":"MS",
+            "year":2022 
         }
-    ]
-
+    }
 }

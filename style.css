@@ -1,0 +1,38 @@
+table {
+  width: 40%;
+  margin-right: 400px;
+  margin-left: 400px;
+}
+
+th, td {
+  border: 1px solid rgb(235, 110, 131);
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f5f385;}
+body{
+  background-color: rgb(141, 205, 241);
+}
+
+h1{
+  color: #f5f385;
+  text-align: center;
+}
+
+button {
+  background-color: #f8a8af; 
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 600px;
+  margin-left: 600px;
+  cursor: pointer;
+  border-radius: 50%; 
+}

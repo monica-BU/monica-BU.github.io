@@ -1,7 +1,10 @@
 a. What I add to this week?
-This week's task is using HTML, CSS and Javascript to build a validator. I created an HTML file, a CSS file, and a js file,
-those files work together to build validator. I use CSS to make the whole page looks like beautiful, and then use HTML form to bring input, there are three types of input-text,radio and checkbox. 
- By using if/else in function in javascript the input value can be validate.
+The first thing I did this week was to create an JOSN file which contains my undergradute and graduate information.
+Then I creat a Javascript to create a fetch request to return a promise, resolve the promise using the Response class
+check the status code of the response and process the returned JSON data.
+
 
 b.How do I run the program?
-First youshould unzip the file, and then you can use broswer like chrome or firfox and ect. to open the index.html, then the program can be running.
+A: First youshould unzip the file, and then you can use broswer like chrome or firfox and ect. to open the index.html, then the program can be running.
+B: You can directly access https://monica-bu.github.io
+

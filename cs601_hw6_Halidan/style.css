@@ -1,0 +1,77 @@
+/* CSS files add styling rules to your content */
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 2em;
+    text-align: center;
+    background-color: lightpink;
+  }
+p{
+  font-size: 20px;
+  color: rgb(127, 179, 228);
+}
+  
+  h1 {
+    font-style: oblique;
+    color: yellow;
+  }
+  
+  .remove {
+    display: inline-block;
+    background-color: #7b38d8;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 15px;
+    padding: 2px;
+    width: 20px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .completed {
+    text-decoration: line-through;  
+  }
+  img{
+      width: 500px;
+      height: 500px;
+  }
+  
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: lightpink;
+    padding: 10px;
+  }
+  .grid-item {   
+    text-align: left;
+  }
+  #todo{
+      font-size: 20px;
+      color: yellow;
+  }
+
+  a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: yellow;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }

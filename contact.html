@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Ahebai Halidan</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+  <script src="message.js" type="module"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Navigation -->
+    <ul class="nav">
+      <li class="nav"><a href="home.html">Home</a></li>
+      <li class="nav"><a href="index.html">Intro</a></li>
+      <li class="nav"><a href="my_story.html">My Story</a></li>
+      <li class="nav"><a href="gallery.html">Gallery</a></li>
+      <li class="nav"><a href="my_interest.html">My Interest</a></li>
+      <li class="nav"><a href="cs.html">CS601</a></li>
+      <li class="nav"><a href="contact.html">Contact Me</a></li>
+    </ul>
+    <!-- <h1>Contact me</h1>-->
+    <!-- <div class="row">
+            <h2>Several ways to contact me</h2>
+        </div>-->
+
+    <div class="grid-container">
+      <div class="grid-item"></div>
+      <div class="grid-item">
+        <h1>Contact me</h1>
+      </div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item">
+        <h2>Several ways to contact me</h2>
+        <div class="card">
+          <img src="images/me2.jpeg" alt="me" width="1000" height="800" />
+          <div class="containerForCard">
+            <h4><b>Monica</b></h4>
+            <p> In Vancouver, in 2021</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item">
+        <div class="contactList">
+          <ol>
+            <li>Wechat: <a href="number">XUE2011</a></li>
+            <li>Email: <a href="mailto:monicayo@gmail.com">monicayo@gmail.com</a></li>
+            <li>Phone: <a href="7786666668066">7786698066</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="grid-item">
+      </div>
+    </div>
+
+    <div id="messages">
+      <div v-for="message in messageList">
+        <label for="comment">{{message.user}}</label>
+        <textarea id="comment" name="comment" rows=2 cols="80" readonly>{{message.msg}}</textarea>
+        <br><br>
+      </div>
+      <form>
+        <label for="uname">Username:</label>
+        <input type="text" placeholder="Anonymous" v-model="newMessage.user" id="uname" name="uname"><br><br>
+        <label for="comment">Comment:</label>
+        <textarea id="comment" v-model="newMessage.msg" name="comment" rows="2" cols="80"></textarea>
+        <br><br>
+        <button type="button" v-on:click="addMessage">Submit!</button>
+      </form>
+    </div>
+
+    <div class="screct">
+      <p>
+        This is my screct--I really like pink color, you can see this only when you use desktop, this will be hide when
+        you use small screen
+      </p>
+    </div>
+
+  </header>
+
+  <footer>
+    <p>Author: Ahebai Halidan<br>
+      monicayo@gmail.com</p>
+  </footer>
+</body>
+
+</html>

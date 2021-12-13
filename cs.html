@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Ahebai Halidan</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+  <script src="main.js" type="module"></script>
+
+<body>
+  <div>
+    <header>
+      <!-- Navigation -->
+      <ul class="nav">
+        <li class="nav">
+          <a href="home.html">Home</a>
+        </li>
+        <li class="nav">
+          <a href="index.html">Intro</a>
+        </li>
+        <li class="nav">
+          <a href="my_story.html">My Story</a>
+        </li>
+        <li class="nav">
+          <a href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav">
+          <a href="my_interest.html">My Interest</a>
+        </li>
+        <li class="nav">
+          <a href="cs.html">CS601</a>
+        </li>
+        <li class="nav">
+          <a href="contact.html">Contact Me</a>
+        </li>
+      </ul>
+      <h1>CS601</h1>
+      <div class="grid-container">
+        <div class="grid-item2">
+          <div class="card">
+            <img src="images/html.jpg" alt="Me" width="300" height="400" />
+            <div class="containerForCard">
+              <h4>
+                <b>Monica</b>
+              </h4>
+              <p> Example of HTML</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item2">
+          <div class="card">
+            <img src="images/css.jpg" alt="Me" width="300" height="400" />
+            <div class="containerForCard">
+              <h4>
+                <b>Monica</b>
+              </h4>
+              <p> Example of CSS</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item2">
+          <div class="card">
+            <img src="images/javascript.jpg" alt="Me" width="300" height="400" />
+            <div class="containerForCard">
+              <h4>
+                <b>Monica</b>
+              </h4>
+              <p> Example of javascript</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item2"></div>
+        <div class="grid-item2">
+          <div id="courses">
+            <p>I learned from this class:</p>
+            <input type="checkbox" id="week1" value="HTML" v-model="checkList">
+            <label for="HTML">HTML</label>
+            <br>
+            <input type="checkbox" id="week2" value="CSS" v-model="checkList">
+            <label for="CSS">CSS</label>
+            <br>
+            <input type="checkbox" id="week3" value="JAVASCRIPT" v-model="checkList">
+            <label for="JAVASCRIPT">JAVASCRIPT</label>
+            <br>
+            <input type="checkbox" id="week4" value="JAVASCRIPT+DOM" v-model="checkList">
+            <label for="JAVASCRIPT+DOM">JAVASCRIPT+DOM</label>
+            <br>
+            <input type="checkbox" id="week5" value="ES6+Fetch" v-model="checkList">
+            <label for="ES6+Fetch">ES6+Fetch</label>
+            <br>
+            <input type="checkbox" id="week6" value="VUE" v-model="checkList">
+            <label for="VUE">VUE</label>
+            <br>
+            <span> Which of the obove classes are you intrested in: {{ checkList }}</span>
+          </div>
+        </div>
+        <div class="grid-item2"></div>
+        <div class="grid-item2">
+          <div class="card">
+            <img src="images/dom.jpg" alt="Me" width="300" height="400" />
+            <div class="containerForCard">
+              <h4>
+                <b>Monica</b>
+              </h4>
+              <p> Example of Dom</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item2">
+          <div class="card">
+            <img src="images/es6.jpeg" alt="Me" width="300" height="400" />
+            <div class="containerForCard">
+              <h4>
+                <b>Monica</b>
+              </h4>
+              <p> Example of ES6</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item2">
+          <div class="card">
+            <img src="images/vue.jpeg" alt="Me" width="300" height="400" />
+            <div class="containerForCard">
+              <h4>
+                <b>Monica</b>
+              </h4>
+              <p> Example of VUE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="screct">
+    <p> This is my screct--I really like pink color, you can see this only when you use desktop, this will be hide when
+      you use small screen </p>
+  </div>
+  </header>
+  <footer>
+    <p>Author: Ahebai Halidan <br> monicayo@gmail.com </p>
+  </footer>
+</body>

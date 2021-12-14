@@ -81,6 +81,8 @@ div a:hover {
   grid-area: footer;
 }
 
+
+
 .grid-item {
   background-color: rgb(236, 245, 155);
   border-style: hidden;
@@ -94,30 +96,6 @@ div a:hover {
   font-size: 300px;
   color: pink
 }
-
-.container .btn {
-  position: absolute;
-  top: 110%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: rgb(126, 103, 103);
-  color: rgb(250, 252, 147);
-  font-size: 16px;
-  padding: 16px 30px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-
-}
-
-.container .btn:hover {
-  background-color: rgb(139, 201, 230);
-  color: white;
-
-}
-
 
 
 .column {
@@ -209,6 +187,10 @@ h3 {
   color: pink;
   text-align: justify;
 }
+h5{
+  font-size: 20px;
+  color: blue;
+}
 
 p {
   font: 400 30px/1.2 'Merienda One', Helvetica, sans-serif;
@@ -274,6 +256,29 @@ td {
   font-size: 30px;
 }
 
+.grid-container4 {
+  display: grid;
+  grid-template-columns: auto  ;
+  background-color: pink;
+  padding: 50px;
+}
+.grid-item4 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 20px;
+  color: lightskyblue;
+  text-align: center;
+
+}
+.grid-item5 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 20px;
+  color: lightskyblue;
+  text-align: center;
+}
 
 
 /* On screens that are 992px wide or less, the background color is blue */
@@ -298,6 +303,10 @@ td {
   h3 {
     color: grey;
   }
+  h5 {
+    color: grey;
+  }
+
 
   footer {
     color: grey;
@@ -311,6 +320,73 @@ td {
   div.screct {
     display: none;
   }
+  img{
+    width: 100%;
+    height: auto;
+  }
+  video {
+    width: 100%;
+    height: auto;
+  }
+  
+  .grid-container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+ .container{
+  width: 100%;
+  height: auto;
+ }
+
+  
+  .grid-container1 {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  
+  }
+  .grid-container4 {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .grid-item2 {
+    background-color: transparent;
+    border-style: hidden;
+    padding: 20px;
+    
+    font-size: x-small;
+    text-align: left;
+    color: black;
+  }
+  
+  .grid-item.item1 {
+    grid-area: footer;
+    font-size: x-small;
+    text-align: left;
+    color: black;
+    
+  }
+  
+  .grid-item {
+    background-color: transparent;
+    border-style: hidden;
+    padding: 20px;
+    
+    text-align: left;
+    color: black;
+    font-size: x-small;
+  }
+
+  .weatherBox {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+ 
 }
 
 
@@ -339,6 +415,10 @@ td {
   h3 {
     color: yellow;
   }
+  h5 {
+    color: yellow;
+  }
+  
 
   footer {
     color: yellow;
@@ -352,4 +432,70 @@ td {
   div.screct {
     display: none;
   }
+
+  img{
+    
+    width: 100%;
+    height: auto;
+  }
+  video {
+    width: 100%;
+    height: auto;
+  }
+  
+  .grid-container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+ 
+  
+  .grid-container1 {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  
+  }
+  .grid-container4 {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .grid-item2 {
+    background-color: transparent;
+    border-style: hidden;
+    padding: 20px;
+    
+    font-size: x-small;
+    text-align: left;
+    color: black;
+  }
+  
+  .grid-item.item1 {
+    grid-area: footer;
+    font-size: x-small;
+    text-align: left;
+    color: black;
+    
+  }
+  
+  .grid-item {
+    background-color: transparent;
+    border-style: hidden;
+    padding: 20px;
+    
+    text-align: left;
+    color: black;
+    font-size: x-small;
+  }
+
+  .weatherBox {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  
 }

@@ -2,93 +2,86 @@
 <html lang="en">
 
 <head>
-   <title>Ahebai Halidan</title>
-   <link rel="stylesheet" href="style.css">
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
-   <script src="main.js" type="module"></script>
+  <title>Ahebai Halidan</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+  <script src="weather.js" type="module"></script>
 </head>
 
 <body>
-   <div>
-      <header>
-         <!-- Navigation -->
-         <ul class="nav">
-            <li class="nav"><a href="home.html">Home</a></li>
-            <li class="nav"><a href="index.html">Intro</a></li>
-            <li class="nav"><a href="my_story.html">My Story</a></li>
-            <li class="nav"><a href="gallery.html">Gallery</a></li>
-            <li class="nav"><a href="my_interest.html">My Interest</a></li>
-            <li class="nav"><a href="cs.html">CS601</a></li>
-            <li class="nav"><a href="contact.html">Contact Me</a></li>
-         </ul>
-         <h1>Introduction</h1>
-         <div class="grid-container1">
-            <div class="grid-item"></div>
-            <div class="grid-item">
-               <h2>A little intro of me</h2>
-            </div>
-            <div class="grid-item"></div>
-            <div class="grid-item">
-               <div class="card">
-                  <img src="images/me.jpeg" alt="Me" width="500" height="600" />
-                  <div class="containerForCard">
-                     <h4><b>Monica</b></h4>
-                     <p> In santa Cruz, in 2019</p>
-                  </div>
-               </div>
-            </div>
-            <div class="grid-item">
-               <p> My name is Ahebai Halidan, I also prefer been called Monica. I was born in Xinjiang, China, and now
-                  live in Vancouver, Canada. I am currently studying computer-related majors at Boston University. This
-                  website is my profile website. I will introduce myself and the things I am interested in. I hope you
-                  can have a good mood while browsing my webpage.</p>
-            </div>
-            <div class="grid-item"></div>
-            <div class="grid-item">
-               <h2>The cities I have lived in</h2>
-               <ul>
-                  <li>Xinjiang, China</li>
-                  <li>Nanjing, China</li>
-                  <li>San Jose, USA</li>
-                  <li>Shanghai, China</li>
-                  <li>Vancouver, Canada</li>
-               </ul>
-            </div>
-            <div class="grid-item">
-               <p>These cities are the places where I lived and studied. Each city has their own beauty and
-                  characteristics. They are very different but they are all places I like. On the following pages I will
-                  also introduce the stories that happened in these cities.</p>
-            </div>
-            <div class="grid-item">
-               <div class="card">
-                  <img src="images/cities.jpeg" alt="cities" width="500" height="600" />
-                  <div class="containerForCard">
-                     <h4><b>Monica</b></h4>
-                     <p>Lovely cities</p>
-                  </div>
-               </div>
-            </div>
-         </div>
+  <div>
+    <header>
+      <!-- Navigation -->
+      <ul class="nav">
+        <li class="nav"><a href="index.html">Home</a></li>
+        <li class="nav"><a href="intro.html">Intro</a></li>
+        <li class="nav"><a href="my_story.html">My Story</a></li>
+        <li class="nav"><a href="gallery.html">Gallery</a></li>
+        <li class="nav"><a href="my_interest.html">My Interest</a></li>
+        <li class="nav"><a href="cs.html">CS601</a></li>
+        <li class="nav"><a href="contact.html">Contact Me</a></li>
+        <li class="nav"><a href="message_board.html">Message Board</a></li>
+        
+      </ul><br><br>
+      <div id="accessibilityText">
+        <h5>In order for you to have a better experience when browsing the web, you need trun on Javascript.</h5>
+      </div>
+      <script>
+        document.getElementById("accessibilityText").innerHTML="";
+      </script>
+      <h2>Boston weather:</h2>
+      <div class="weatherBox">
+        <div id="weather">
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Temp</th>
+              <th>Temp Unit</th>
+              <th>Windspeed</th>
+              <th>WindDir</th>
+            </tr>
+            <tr>
+              <td>{{ weatherInfo.name }}</td>
+
+              <td>{{ weatherInfo.temperature }}</td>
 
 
-         <div class="screct">
-            <p>
-               This is my screct--I really like pink color, you can see this only when you use desktop, this will be
-               hide when you use small screen
-            </p>
-         </div>
-      </header>
-      <footer>
-         <p>Author: Ahebai Halidan<br>
-            monicayo@gmail.com</p>
-      </footer>
-      </footer>
+              <td>{{ weatherInfo.temperatureUnit }}</td>
+
+              <td>{{ weatherInfo.windSpeed }}</td>
+              <td>{{ weatherInfo.windDirection }}</td>
+            </tr>
+
+          </table>
+        </div>
+
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-item"><i class="material-icons">favorite</i></div>
+        <div class="grid-item">Welcome to my website</div>
+        <div class="grid-item"><i class="material-icons">favorite</i></div>
+        <div class="grid-item"><i class="material-icons">favorite</i></div>
+        <div class="grid-item">
+          <img src="images/whiterock.jpg" alt="whiterock" style="border-radius: 50%; width: 1000px;">
+          <p id="whiterock"></p>
+        </div>
+        <div class="grid-item"><i class="material-icons">favorite</i></div>
+        <div class="grid-item"><i class="material-icons">favorite</i></div>
+        <div class="grid-item"><i class="material-icons">favorite</i></div>
+        <div class="grid-item"><i class="material-icons">favorite</i></div>
+      </div>
+    </header>
+  </div>
+
+  <footer>
+    <p>Author: Ahebai Halidan<br>
+      monicayo@gmail.com</p>
+  </footer>
 </body>
-
-
 
 </html>

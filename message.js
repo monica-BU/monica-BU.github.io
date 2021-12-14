@@ -3,13 +3,13 @@
 
 import {
   initializeApp
-} from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js'
+} from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js';
 import {
   getDocs,
   addDoc,
   collection,
   getFirestore
-} from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js'
+} from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -24,14 +24,6 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore();
-
-
-const querySnapshot = await getDocs(collection(db, "cities"));
-querySnapshot.forEach((doc) => {
-  // doc.data() is never undefined for query doc snapshots
-  console.log(doc.id, " => ", doc.data());
-});
-
 
 
 new Vue({
@@ -50,16 +42,16 @@ new Vue({
       let obj = this;
       getDocs(collection(db, "messages")).then(docs => {
         docs.forEach((doc) => {
-          console.log(doc.data())
+          console.log(doc.data());
           let data = {
             user: doc.data().user,
             msg: doc.data().msg,
             create_time: doc.data().create_time
-          }
+          };
           if (!data.user || data.user.length === 0) {
-            data.user = "Anonymous"
+            data.user = "Anonymous";
           }
-          obj.messageList.push(data)
+          obj.messageList.push(data);
         });
         obj.messageList.sort(function (a, b) {
           return a.create_time - b.create_time;
@@ -80,14 +72,14 @@ new Vue({
         create_time: currentTime
       }).then(docRef => {
         console.log("Document written with ID: ", docRef.id);
-        obj.messageList = []
-        obj.getMessages()
+        obj.messageList = [];
+        obj.getMessages();
       }).catch(e => {
         console.error("Error adding document: ", e);
       });
     }
   },
   beforeMount() {
-    this.getMessages()
+    this.getMessages();
   }
-})
+});

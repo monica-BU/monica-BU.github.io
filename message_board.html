@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Ahebai Halidan</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+  <script src="message.js" type="module"></script>
+</head>
+
+<body>
+  <div>
+  <header>
+    <!-- Navigation -->
+    <ul class="nav">
+      <li class="nav"><a href="index.html">Home</a></li>
+      <li class="nav"><a href="intro.html">Intro</a></li>
+      <li class="nav"><a href="my_story.html">My Story</a></li>
+      <li class="nav"><a href="gallery.html">Gallery</a></li>
+      <li class="nav"><a href="my_interest.html">My Interest</a></li>
+      <li class="nav"><a href="cs.html">CS601</a></li>
+      <li class="nav"><a href="contact.html">Contact Me</a></li>
+      <li class="nav"><a href="message_board.html">Message Board</a></li>
+    </ul><br><br>
+    
+    <div id="accessibilityText">
+      <h5>In order for you to have a better experience when browsing the web, you need trun on Javascript.</h5>
+    </div>
+    <script>
+      document.getElementById("accessibilityText").innerHTML="";
+    </script>
+    <div class="grid-container4">
+        <div id="messages">
+        <div class="grid-item4">
+            <div v-for="message in messageList">
+                <label for="comment">{{message.user}}</label>
+                <textarea id="comment" name="comment" rows=2 cols="80" readonly>{{message.msg}}</textarea>
+        </div>
+        <div class="grid-item5">
+            <form>
+                <label for="uname">Username:</label>
+                <input type="text" placeholder="Anonymous" v-model="newMessage.user" id="uname" name="uname"><br><br>
+                <label for="newComment">Comment:</label>
+                <textarea id="newComment" v-model="newMessage.msg" name="newComment" rows="2" cols="80"></textarea>
+                <br><br>
+                <button type="button" v-on:click="addMessage">Submit!</button>
+                </form>
+        </div>
+    </div> 
+      </div>
+    </div>
+  </header>
+</div>
+  <br><br>
+
+  <div class="screct">
+    <p>
+      This is my screct--I really like pink color, you can see this only when you use desktop, this will be hide when
+      you use small screen
+    </p>
+  </div>
+  <footer>
+    <p>Author: Ahebai Halidan<br>
+      monicayo@gmail.com</p>
+  </footer>
+</body>
+
+</html>

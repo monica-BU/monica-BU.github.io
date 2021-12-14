@@ -15,18 +15,16 @@
   <header>
     <!-- Navigation -->
     <ul class="nav">
-      <li class="nav"><a href="home.html">Home</a></li>
-      <li class="nav"><a href="index.html">Intro</a></li>
+      <li class="nav"><a href="index.html">Home</a></li>
+      <li class="nav"><a href="intro.html">Intro</a></li>
       <li class="nav"><a href="my_story.html">My Story</a></li>
       <li class="nav"><a href="gallery.html">Gallery</a></li>
       <li class="nav"><a href="my_interest.html">My Interest</a></li>
       <li class="nav"><a href="cs.html">CS601</a></li>
       <li class="nav"><a href="contact.html">Contact Me</a></li>
+      <li class="nav"><a href="message_board.html">Message Board</a></li>
     </ul>
-    <!-- <h1>Contact me</h1>-->
-    <!-- <div class="row">
-            <h2>Several ways to contact me</h2>
-        </div>-->
+    
 
     <div class="grid-container">
       <div class="grid-item"></div>
@@ -60,21 +58,7 @@
       </div>
     </div>
 
-    <div id="messages">
-      <div v-for="message in messageList">
-        <label for="comment">{{message.user}}</label>
-        <textarea id="comment" name="comment" rows=2 cols="80" readonly>{{message.msg}}</textarea>
-        <br><br>
-      </div>
-      <form>
-        <label for="uname">Username:</label>
-        <input type="text" placeholder="Anonymous" v-model="newMessage.user" id="uname" name="uname"><br><br>
-        <label for="comment">Comment:</label>
-        <textarea id="comment" v-model="newMessage.msg" name="comment" rows="2" cols="80"></textarea>
-        <br><br>
-        <button type="button" v-on:click="addMessage">Submit!</button>
-      </form>
-    </div>
+   
 
     <div class="screct">
       <p>

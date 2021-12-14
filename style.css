@@ -9,12 +9,9 @@ body {
 
 .weatherBox {
   margin: auto;
-  width: 60%;
+  width: 30%;
   border: none;
-  padding-left: 600px;
-  padding-bottom: 50px;
   text-align: center;
-
 }
 
 

@@ -11,7 +11,7 @@ import {
   getFirestore
 } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js';
 
-// Your web app's Firebase configuration
+// Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyADksypjllFU9TnEi8YOgY103lv6I0eF-A",
   authDomain: "messageboard-37e6c.firebaseapp.com",
